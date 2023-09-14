@@ -33,7 +33,6 @@ ALLOWED_HOSTS = [
 ]
 
 INTERNAL_IPS = [
-    '127.0.0.1',
 ]
 
 # Application definition
@@ -91,10 +90,10 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '<your_username>$<your_database_name>',
-        'USER': '<your_username>',
+        'NAME': 'antoshfz_django',
+        'USER': 'antoshfz_django',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': '<your_mysql_hostname>',
+        'HOST': 'localhost',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
